@@ -2,7 +2,7 @@
 
 run dev container
 ```
-docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app c68d54201e3c01
+docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app <container id>
 ```
 
 # Getting Started with Create React App
