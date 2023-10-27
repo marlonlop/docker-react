@@ -7,3 +7,16 @@ before-install:
 
 script:
  - docker run -e CI=true mlop/docker-react npm run test 
+
+ deploy:
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "docker-react-practice-app"
+  env: "Docker-react-practice-app-env"
+  bucket_name: "elasticbeanstalk-us-east-2-473176441506"
+  bucket_path: "docker-react-practice-app"
+  on:
+    branch: master
+  access_key_id: $aws-beanstalk-access-key  
+  secret_access_key: "$aws-beanstalk-secret-key"
+  
