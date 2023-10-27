@@ -17,6 +17,6 @@ script:
   bucket_path: "docker-react-practice-app"
   on:
     branch: master
-  access_key_id: $aws-beanstalk-access-key  
+  access_key_id: $aws-beanstalk-access-key
   secret_access_key: "$aws-beanstalk-secret-key"
   
