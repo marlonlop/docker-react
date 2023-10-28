@@ -13,7 +13,7 @@ function App() {
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
-          rel="react app"
+          rel="new branch commit"
         >
           Learn React
         </a>
